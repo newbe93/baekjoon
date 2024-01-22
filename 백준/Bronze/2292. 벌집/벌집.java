@@ -7,8 +7,9 @@ public class Main {
 		Scanner scan = new Scanner(System.in);
 		int N = scan.nextInt();
 		int count = 1;
-		while(N > 1) {
-			N = N- count*6;
+		int floorMaxNum = 1;
+		while(N> floorMaxNum) {
+			floorMaxNum += 6*count;
 			count++;
 		}
 		System.out.println(count);
